@@ -1,0 +1,11 @@
+local component = require("component") 
+local term = require("term")
+local unicode = require("unicode")
+local keyboard = require("keyboard")
+local windows = require("windows")
+local internet = require("internet")
+-------------------------------------
+local data = windows.universalWindow("auto", "auto", 36, 0xeeeeee, true, {"EmptyLine"},{"CenterText", 0x880000, "Вставте букву доски."},
+{"EmptyLine"},{"CenterText", 0x880000, "Вставте номер треда"},{"Button", {0x57A64E, 0xffffff, "Старт"}, {0xF2B233, 0xffffff, "Сбросить"}, {0xCC4C4C, 0xffffff, "Выход"}})
+windows.prepareToExit()
+end
